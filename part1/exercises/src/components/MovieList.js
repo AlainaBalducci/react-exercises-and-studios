@@ -5,7 +5,7 @@ class MovieList extends React.Component {
    render() {
       const movies = ["Pride and Prejudice", "Howl's Moving Castle", "Desperado", "Sonic the Hedgehog 2"];
       return (
-      <div>
+      <div className={classes.backgroundMovie}>
          <h3 className = {classes.movieHeading}>Movies I Watched This Month</h3>
          <ol>
             <li className={classes.movieText}>{movies[0]}</li>

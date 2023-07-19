@@ -1,3 +1,6 @@
+import classes from './BookList.module.css';
+
+
 export default function BookList() {
    let pageTitle = "Books I want to Read!";
    let book1 = "https://m.media-amazon.com/images/I/41y31M-zcgL._SX218_BO1,204,203,200_QL40_FMwebp_.jpg";
@@ -6,7 +9,7 @@ export default function BookList() {
 
    return (
       <div>
-         <h3>{pageTitle}</h3>
+         <h3 className={classes.bookTitle}>{pageTitle}</h3>
          <img src={book1} alt="A Book to learn JavaScript and JQuery" />
          <img src={book2} alt="A Book to learn PHP and MySql" />
          <img src={book3} alt="A Book to learn HTML and CSS" />
