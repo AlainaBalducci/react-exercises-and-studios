@@ -4,9 +4,10 @@ import oceans from './oceans.json';
 
 
 function Profile() {
-   let listItem = oceans.map(ocean => 
-      <div key={ocean.id} className={`${ocean.fishCheck === "true" ? "isAFish" : "profile"}`} >
-         <img src={ocean.image} alt={ocean.name} className='img'/>
+   let listItem = oceans.map(oceans => 
+      <div key={oceans.id} className={`${oceans.fishCheck === "true" ? "isAFish" : "profile"}`} >
+         <img src={oceans.image} alt={oceans.name} className='img'/>
+         <h1>{oceans.name}</h1>
       </div>
       );
    return(
