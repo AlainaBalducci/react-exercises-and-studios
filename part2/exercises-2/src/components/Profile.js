@@ -5,7 +5,7 @@ import oceans from './oceans.json';
 
 function Profile() {
    let listItem = oceans.map(ocean => 
-      <div key={ocean.id}>
+      <div key={ocean.id} className={`${ocean.fishCheck === "true" ? "isAFish" : "profile"}`} >
          <img src={ocean.image} alt={ocean.name} className='img'/>
       </div>
       );
