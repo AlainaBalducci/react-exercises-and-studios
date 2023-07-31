@@ -16,13 +16,11 @@ function Profile() {
         <li>{oceans.fact2}</li>
         <li>{oceans.fact3}</li>
       </ul>
+      <Button />
     </div>
   ));
   return (
-    <>
       <ul>{listItem}</ul>
-      <Button />
-    </>
   );
 }
 
