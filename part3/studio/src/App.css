@@ -40,8 +40,16 @@
 .recipePhotoBlock {
   display: flex;
   justify-content: space-evenly;
+  
 }
 
 .imageUpdates {
   object-fit: contain;
+  /* margin-top: 100px;
+  margin-left: 10px; */
+}
+
+img {
+  width: 400px;
+  height: 500px;
 }
